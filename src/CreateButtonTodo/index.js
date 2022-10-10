@@ -1,9 +1,10 @@
 import React from "react";
 import { CreateButtonTodoUi } from "./CreateButtonTodoUI";
 
-function CreateButtonTodo() {
-    const onClickButton = (msg) => {
-        alert(msg);
+function CreateButtonTodo(props) {
+    const onClickButton = () => {
+        // Avtiva el modal
+        props.setOpenModal(true);
     }
 
     return (

@@ -5,7 +5,7 @@ function CreateButtonTodoUi({onClickButton}) {
     return(
         <button 
             className="CreateButtonTodo"
-            onClick={() => onClickButton('Esto es una alerta')}
+            onClick={onClickButton}
         >
             +
         </button> 
